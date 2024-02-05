@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="#FF460404">
+    <Grid >
+        <TextBox Name ="num1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="num1" VerticalAlignment="Top" Width="120" Margin="64,114,0,0" Background="#FF7F1C1C" Height="42" />
+        <TextBox Name ="den1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="den1" VerticalAlignment="Top" Width="120" Margin="64,200,0,0" Background="#FF7F1C1C" Height="41" />
+        <TextBox Name ="num2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="num2" VerticalAlignment="Top" Width="120" Margin="374,115,0,0" Height="41" Background="#FF7F1C1C" />
+        <TextBox Name ="den2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="den2" VerticalAlignment="Top" Width="120" Margin="374,199,0,0" Background="#FF7F1C1C" Height="42" />
+        <ComboBox HorizontalAlignment="Left" Margin="213,163,0,0" VerticalAlignment="Top" Width="120" Height="33">
+            <ComboBoxItem IsSelected="True">+</ComboBoxItem>
+            <ComboBoxItem>-</ComboBoxItem>
+            <ComboBoxItem>*</ComboBoxItem>
+            <ComboBoxItem>/</ComboBoxItem>
+        </ComboBox>
+        <Button Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="64,306,0,0" VerticalAlignment="Top" Height="35" Width="120" Click="btnClear_Click"/>
+        <Button Name="btnCalculate" Content="Calculate" HorizontalAlignment="Left" Margin="374,306,0,0" VerticalAlignment="Top" Height="35" Width="120" Click="btnCalculate_Click"/>
+        <Label Content="=" HorizontalAlignment="Left" Margin="513,167,0,0" VerticalAlignment="Top" Width="131"/>
+        <Label Name ="numAns" Content="numAns" HorizontalAlignment="Left" Margin="573,117,0,0" VerticalAlignment="Top" Width="131"/>
+        <Label Name ="denAns" Content="denAns" HorizontalAlignment="Left" Margin="573,207,0,0" VerticalAlignment="Top" Width="131"/>
+
+    </Grid>
+</Window>
