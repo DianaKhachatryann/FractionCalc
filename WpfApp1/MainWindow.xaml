@@ -11,7 +11,7 @@
         <TextBox Name ="den1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="den1" VerticalAlignment="Top" Width="120" Margin="64,200,0,0" Background="#FF7F1C1C" Height="41" />
         <TextBox Name ="num2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="num2" VerticalAlignment="Top" Width="120" Margin="374,115,0,0" Height="41" Background="#FF7F1C1C" />
         <TextBox Name ="den2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="den2" VerticalAlignment="Top" Width="120" Margin="374,199,0,0" Background="#FF7F1C1C" Height="42" />
-        <ComboBox HorizontalAlignment="Left" Margin="213,163,0,0" VerticalAlignment="Top" Width="120" Height="33">
+        <ComboBox Name="opComboBox" HorizontalAlignment="Left" Margin="213,163,0,0" VerticalAlignment="Top" Width="120" Height="33">
             <ComboBoxItem IsSelected="True">+</ComboBoxItem>
             <ComboBoxItem>-</ComboBoxItem>
             <ComboBoxItem>*</ComboBoxItem>
@@ -20,8 +20,9 @@
         <Button Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="64,306,0,0" VerticalAlignment="Top" Height="35" Width="120" Click="btnClear_Click"/>
         <Button Name="btnCalculate" Content="Calculate" HorizontalAlignment="Left" Margin="374,306,0,0" VerticalAlignment="Top" Height="35" Width="120" Click="btnCalculate_Click"/>
         <Label Content="=" HorizontalAlignment="Left" Margin="513,167,0,0" VerticalAlignment="Top" Width="131"/>
-        <Label Name ="numAns" Content="numAns" HorizontalAlignment="Left" Margin="573,117,0,0" VerticalAlignment="Top" Width="131"/>
-        <Label Name ="denAns" Content="denAns" HorizontalAlignment="Left" Margin="573,207,0,0" VerticalAlignment="Top" Width="131"/>
+        <Label Name ="numAns" Content="numAns" HorizontalAlignment="Left" Margin="624,118,0,0" VerticalAlignment="Top" Width="131"/>
+        <Label Name ="denAns" Content="denAns" HorizontalAlignment="Left" Margin="624,207,0,0" VerticalAlignment="Top" Width="131"/>
+        <Label Name="mixedNum" Content="mixedNum" HorizontalAlignment="Left" Margin="565,167,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
